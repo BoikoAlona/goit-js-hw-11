@@ -1,2 +1,97 @@
 @import './common';
 @import './example';
+
+.is-hidden {
+    display: none;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #0d161b;
+    border-radius: 7px;
+}
+
+.search-form {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0 20px 0;
+    background: #6957b3;
+}
+
+input {
+    width: 200px;
+    height: 40px;
+    padding-left: 10px;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 20px;
+    background-color: #fff;
+}
+
+button:hover,
+button:focus {
+    background-color: #ada4d1;
+}
+
+.load-more {
+    margin: 40px auto;
+    width: 200px;
+    background-color: #ada4d1;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px
+}
+
+.gallery-link {
+    display: block;
+    text-decoration: none;
+    height: 400px;
+    width: 400px;
+}
+
+.photo-card {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    border: 1px solid #0d161b;
+    border-radius: 5px;
+    padding: 10px;
+    overflow: hidden;
+    height: 100%;
+}
+
+.info {
+    display: flex;
+    align-items:flex-start;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.info p {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 0;
+}
+
