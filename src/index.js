@@ -40,7 +40,7 @@ async function onFormSubmit(evt) {
 refs.loadMore.addEventListener("click", onLoadMoreClick);
 
 async function onLoadMoreClick() {
-    page = page++;
+    page++;
     UpdateBtnStatus();
     const data = await fetchImages();
     const markup = postsTemplate(data.hits);
