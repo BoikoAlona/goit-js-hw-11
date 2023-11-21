@@ -20,6 +20,7 @@ refs.form.addEventListener("submit", onFormSubmit);
 
 async function onFormSubmit(evt) {
   evt.preventDefault();
+  page = 1;
   q = evt.target.elements.searchQuery.value;
   
   const data = await fetchImages();
@@ -82,7 +83,8 @@ function postsTemplate(posts) {
 }
 
 function UpdateBtnStatus() {
-  if (refs.loadMore.disabled = page >= totalPage) {
+  if (page >= totalPage) {
+    refs.loadMore.classList.add('is-hidden');
     Notiflix.Notify.info("We're sorry, but you've reached the end of search results.")
-  };
+  } else { refs.loadMore.classList.replace('is-hidden', 'loadMore') };
 }
